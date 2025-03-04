@@ -20,7 +20,7 @@ ardu_one = Arduino()
 time.sleep(2)
 print("MOTOR CONTROLLER INITALIZED")
 
-file = open(r"/home/wenzler/BA_Wenzler/measurement_data.txt", "a")
+file = open(r"/home/wenzler/BA_Wenzler/measurement_data.tsv", "a")
 file.write("TimeStamp\tImpedance_Z\tResistance_Rp\tCapacity_Cp\tPhase\tForce\n")
 print("DATA FILE OPENED..")
 def make_measurement():
