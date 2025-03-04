@@ -32,7 +32,7 @@ def make_measurement():
     lcr_str = "\t".join(formatted_values) + '\t'
     force = load_cell.getForce()
     print(f"{str_time_stamp}\t{lcr_str}\t{force:.5f}")
-    file.write(f"{str_time_stamp}\t{lcr_str}\t{force:.5f}")
+    file.write(f"{str_time_stamp}\t{lcr_str}\t{force:.5f}\n")
     file.flush()
 
 
